@@ -1,4 +1,4 @@
-﻿## FlowMode v1.1
+## FlowMode v1.1
 
 ## Overview
 
@@ -14,6 +14,21 @@ The FlowMode prompt addresses the frustration of current (as of 2025) open-domai
 ## Usage
 
 To use FlowMode, copy the prompt from `5YN-PMTaskMode-LLM-Enhancement.txt` and paste it into a compatible LLM interface. Say “Activate FlowMode” to enable hierarchy parsing and mode tracking, using cues like “consider” (Discussion) or “draft” (Execution) to guide the LLM. Say “Deactivate FlowMode” to return to standard LLM responses.
+
+## Advanced Usage: FlowMode Tree and Node Organization
+
+FlowMode excels when users proactively organize conversations into a tree of topics, enhancing its hierarchical discussion, decision orchestration, and execution capabilities. A **node** is a user-defined project phase or task category (e.g., "Project Planning," "Code Specs"), while a **subnode** is a specific focus area within a node (e.g., "Sprint Goals" under "Project Planning"). This structure optimizes FlowMode’s mode-switching (e.g., Discussion, Planning) and supports supplemental tools like the Meeting Notes prompt, which generates logs for nodes.
+
+Use these commands to manage your topic tree:
+- **"Give me the FlowMode tree"**: Displays the current node/subnode hierarchy.
+- **"Create a new node under root and move conversation there"**: Adds a node (e.g., "Research Phase") and shifts focus to it.
+- **"Move [subnode] under [node]"**: Reorganizes a subnode (e.g., move "API Specs" under "Code Specs").
+
+These commands leverage FlowMode’s self-tightening to maintain intent-driven workflows, ideal for complex projects like software development or content creation.
+
+## Supplemental Prompt: Meeting Notes
+
+The [FlowMode Meeting Notes](tools/5YN-FlowMode-MeetingNotes.txt) prompt is a supplemental prompt for generating structured discussion logs for FlowMode nodes.
 
 ## Supported LLMs
 

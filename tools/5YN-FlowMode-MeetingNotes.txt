@@ -1,0 +1,30 @@
+﻿## FlowMode Meeting Notes v1.1
+
+Activate with: 'Generate Meeting Notes for [Node Name]'
+
+Inputs:
+- Node Name: User-specified FlowMode node - e.g., a project phase or task category - to focus the log.
+- Conversation History: Provided by user - e.g., recent discussions related to the node, stored in FlowMode node(s).
+- Optional Context Data: User-provided - e.g., documents or metrics relevant to the node’s objectives - e.g., a report summarizing progress or outcomes.
+
+Instructions:
+The AI (context-aware, open-domain LLM) executes this prompt, processing inputs to generate a structured Discussion Log, while the user configures inputs (node name, history, context data) and reviews outputs. Ingest inputs, generate a Discussion Log for the node based on history and context data. Use third-person to describe user actions - e.g., ‘user action noted.’ Structure:
+
+- Summary: One paragraph - prioritize high-impact conclusions (impact score ≥ 8) - e.g., strategic insights advancing node objectives, user-emphasized priorities, or trends with long-term potential - followed by supporting points (score 5–7) - e.g., discussions addressing objectives with measurable impact - synthesize across subnodes to avoid fragmentation.
+- Discussion by Subnode: For each subnode - e.g., a specific focus area within the node - include:
+  - Summary: Brief - e.g., discussions refining a key aspect of the node - AI assigns impact score (1–10) based on alignment with node objectives, user intent, and trend potential - e.g., score 8 for outcomes advancing primary goals.
+  - Questions Asked and Answered: List - e.g., inquiries and responses clarifying node priorities - AI highlights exchanges driving high-impact conclusions (score ≥ 8) - e.g., exchanges shaping significant outcomes - note user insights - e.g., user confirmed alignment.
+  - Tangents: Detail origins - e.g., shifts from primary focus to related topics - evolution - e.g., redirected to refine node objectives - dates - e.g., locked in recent session - AI flags tangents impacting conclusions (score ≥ 8) or excluded as low-impact (score < 5) - e.g., a high-impact tangent reinforcing node goals.
+
+Exclude:
+- Moved specifics - e.g., details finalized in another node - e.g., secondary tasks reassigned.
+- Miscommunications - e.g., irrelevant clarifications - e.g., minor errors not impacting outcomes.
+- Meta - e.g., requests to view node structure - e.g., structural discussions.
+
+Additional Requirements:
+- Pre-Log Impact Scoring: AI analyzes subnodes to assign impact scores (1–10) to conclusions based on: (1) user emphasis (e.g., explicitly prioritized insights), (2) alignment with node objectives (e.g., advancing deliverables or measurable outcomes), (3) predictive trend potential (e.g., long-term impact). High-impact conclusions (≥ 8) lead summary; supporting points (score 5–7) follow; low-impact (score < 5) may be excluded.
+- User Intent Validation: AI cross-checks summary against user inputs (e.g., conversation history, context data) to ensure emphasized insights are prominent, adjusting weights if missed (e.g., elevate user-flagged conclusions).
+- Iterative Refinement: AI drafts summary, reviews for omissions by comparing against subnode Q&A/tangents, ensures high-impact conclusions (score ≥ 8) are not diluted by low-impact points (score < 5).
+- Exclusion Transparency: AI documents excluded tangents with reasons (e.g., ‘low impact, score 3’), noting high-impact exclusions (score ≥ 8) to preserve context.
+
+Output log - e.g., a log summarizing node progress and prioritized outcomes - user may lock or tweak - e.g., outcomes confirmed.
