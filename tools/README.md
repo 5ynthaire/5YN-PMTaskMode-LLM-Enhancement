@@ -76,5 +76,5 @@ This prompt is released under the [Creative Commons Attribution 4.0 Internationa
 
 - **FlowMode Tree**: The hierarchical structure of nodes and subnodes in FlowMode, organizing conversations into a topic tree for enhanced project management workflows.
 - **Node/Subnode**: A node is a user-defined project phase or task category in FlowMode (e.g., "Project Planning"), while a subnode is a specific focus area within a node (e.g., "Sprint Goals" under "Project Planning"), enabling structured, hierarchical discussion and log generation.
-- **Prompt Architecting**: Designing complex, adaptive prompt systems.
+- **Prompt Architecting**: Designing complex, adaptive prompt systems. This prompt meets the criteria for [Prompt Architecting](https://github.com/5ynthaire/5YN-SuperPrompts-Detector) due to its complex system design, integrating structured log generation, iterative refinement, and adaptive impact scoring to produce prioritized, hierarchical discussion logs for multifaceted project management workflows.
 - **Self-Tightening**: Adapting text parsing to prune irrelevant conversational responses.

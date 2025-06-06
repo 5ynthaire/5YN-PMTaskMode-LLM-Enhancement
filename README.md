@@ -28,12 +28,12 @@ These commands leverage FlowMode’s self-tightening to maintain intent-driven w
 
 ## Supplemental Prompt: Meeting Notes
 
-The [FlowMode Meeting Notes](tools/5YN-FlowMode-MeetingNotes.txt) prompt is a supplemental prompt for generating structured discussion logs for FlowMode nodes.
+The [FlowMode Meeting Notes](tools/README.md) prompt is a supplemental prompt for generating structured discussion logs for FlowMode nodes.
 
 ## Supported LLMs
 
-Developed on Grok (May 2025), compatible with equivalent-capability LLMs:  
-- Grok  
+Developed on Grok 3 (May 2025), compatible with equivalent-capability LLMs:  
+- Grok 3 
 - ChatGPT  
 - Llama  
 Future LLMs should support the prompt, absent industry leadership in standardizing cognition levels.
