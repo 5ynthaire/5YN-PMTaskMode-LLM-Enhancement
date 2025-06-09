@@ -30,12 +30,17 @@ These commands leverage FlowMode’s self-tightening to maintain intent-driven w
 
 The [FlowMode Meeting Notes](tools/README.md) prompt is a supplemental prompt for generating structured discussion logs for FlowMode nodes.
 
+## Synergy with Simplification Prompt
+
+The [Simplification Prompt](https://github.com/5ynthaire/5YN-IterationHellBreaker-LLM-Enhancement) leverages FlowMode’s clear conversation modes to better detect unsuccessful iterations in LLM-driven tasks, improving efficiency over unguided conversations.
+
 ## Supported LLMs
 
 Developed on Grok 3 (May 2025), compatible with equivalent-capability LLMs:  
 - Grok 3 
 - ChatGPT  
 - Llama  
+
 Future LLMs should support the prompt, absent industry leadership in standardizing cognition levels.
 
 ## Prompt Text
