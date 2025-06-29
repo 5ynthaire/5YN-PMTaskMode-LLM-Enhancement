@@ -1,4 +1,4 @@
-## FlowMode v1.1
+## FlowMode Prompt
 
 ## Overview
 
